@@ -518,7 +518,7 @@ ul {
     height: 40px;
     /* margin-left: 80px; */
     background-color: var(--color-primary-dark);
-    border: 1px solid var(--color-primary-inverted);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 8px 16px;
@@ -528,11 +528,11 @@ ul {
 
 .subscription-input::placeholder {
     font-weight: 400;
-        font-size: 12px;
-        line-height: 2;
-        align-items: center;
-            letter-spacing: 0.04em;
-            color: var(--color-primary-inverted);
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* portfolio */
@@ -732,17 +732,17 @@ ul {
 
 .modal {
     position: relative;
-    overflow: auto;
     width: 100%;
     height: 100%;
     max-width: 408px;
-    max-height: 576px;
+    max-height: 584px;
     /* background-color: var(--color-primary-inverted); */
     background-color: var(--color-modal);
     border-radius: 4px;
     transition: transform 250ms;
     transform: scale(1);
     padding: 24px;
+    padding-top: 74px;
 }
 
 .modal-close {
@@ -763,6 +763,11 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close:focus {
+    background-color: var(--color-secend);
+    fill: var(--color-primary-inverted);
+}
+
 .modal-close:hover {
     background-color: var(--color-secend);
     fill: var(--color-primary-inverted);
@@ -774,7 +779,6 @@ ul {
 }
 
 .modal-text {
-    padding-top: 48px;
     margin-bottom: 16px;
     font-style: normal;
     font-weight: 500;
@@ -848,11 +852,13 @@ ul {
     width: 100%;
     height: 120px;
     padding: 8px 16px;
+    /* padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px; */
     border-radius: 4px;
     background-color: var(--color-modal);
     border: 1px solid rgba(33, 33, 33, 0.2);
     resize: none;
-    margin-bottom: 16px;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
