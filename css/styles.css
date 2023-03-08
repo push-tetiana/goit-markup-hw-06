@@ -836,6 +836,10 @@ ul {
     margin-bottom: 8px;
 }
 
+.modal-form-label-textarea {
+    margin-bottom: 16px;
+}
+
 .modal-form-input-wrapper {
     position: relative;
 }
@@ -852,9 +856,7 @@ ul {
     width: 100%;
     height: 120px;
     padding: 8px 16px;
-    /* padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px; */
+    display: block;
     border-radius: 4px;
     background-color: var(--color-modal);
     border: 1px solid rgba(33, 33, 33, 0.2);
